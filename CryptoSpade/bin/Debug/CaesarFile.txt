@@ -1,0 +1,3 @@
+The Caesar algorithm works by taking any file and an integer key.
+
+The key represents the number of bytes which will be substituted in each byte of the orignal file.

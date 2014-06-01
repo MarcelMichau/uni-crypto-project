@@ -1,0 +1,9 @@
+The Vernam Algorithm works by taking an input string and key, then converting each character to a numerical value. 
+ 
+The key must be the same length as the input string.  
+
+The algorithm then performs an XOR operation on the characters in the input string with the characters in the key. 
+ 
+The integer output of the XOR operation is then converted back to a character string.
+
+Note: There are certain instances where the XOR of two characters will result in a reserved ASCII value such as an EOF (End of File) or escape character and the string will not be fully decryptable.

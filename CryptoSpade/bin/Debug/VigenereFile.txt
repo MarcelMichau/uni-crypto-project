@@ -1,0 +1,5 @@
+The Vigenere Tableau cipher takes an input file and a string key.
+
+The file is then encrypted by using each character of the key as a Caesar algorithm substitute to shift the bytes in the original file.
+
+To decrypt, the key is used to subtract the shifted byte amount from the decrypted file to retrieve the original file.

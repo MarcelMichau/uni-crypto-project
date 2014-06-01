@@ -1,0 +1,11 @@
+The Vernam Algorithm works by taking an input file.
+
+A key is generated with random data that is the same size as the input file.
+
+This key must be kept secret and must not be lost as it is the only way of decrypting the file.
+ 
+The algorithm then performs an XOR operation on the bytes of the input file with the bytes in the key file. 
+ 
+The output of the XOR operation is the resulting encrypted file.
+
+To decrypt, the encrypted file is specified as well as the key, and the opposite XOR operation is performed and the result is the decrypted file.

@@ -1,0 +1,19 @@
+The AES algorithm is based on permutations and substitutions.
+
+The following steps are performed:
+
+1.  KeyExpansion — round keys are derived from the cipher key using Rijndael's key schedule.
+
+2.  InitialRound
+AddRoundKey — each byte of the state is combined with the round key using bitwise xor.
+
+3.  Rounds
+SubBytes — a non-linear substitution step where each byte is replaced with another according to a lookup table.
+ShiftRows — a transposition step where each row of the state is shifted cyclically a certain number of steps.
+MixColumns — a mixing operation which operates on the columns of the state, combining the four bytes in each column.
+AddRoundKey
+
+4.  Final Round (no MixColumns)
+SubBytes
+ShiftRows
+AddRoundKey

@@ -1,0 +1,3 @@
+The Caesar algorithm works by taking an input string and an integer key.
+
+The key represents the amount of characters the alphabet will shift to the right.

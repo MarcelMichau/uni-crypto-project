@@ -1,0 +1,7 @@
+The Transposition file encryption algorithm works by taking an input file, and a string key.
+
+It then uses variables such as the file's size and key's length to determine the amount of rows and columns to generate.
+
+The key's alphabetical position is then used to determine the order of the columns and the columns are then transposed to obtain a scrambled array of bytes.
+
+To decrypt, the reverse is performed to obtain the original file.
