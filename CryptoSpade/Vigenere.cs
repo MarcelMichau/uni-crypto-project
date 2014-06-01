@@ -58,7 +58,7 @@ namespace CryptoSpade
             }
             return result;
         }
-
+        //Duplicates The Key
         private string DuplicateKey(string message, string key)
         {
             if (key.Length < message.Length)
