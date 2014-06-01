@@ -18,7 +18,7 @@ namespace CryptoSpade
 
         public Byte[] DecryptFile(Byte[] ciphertext)
         {
-            var result = new Byte[ciphertext.Length];
+            var decryptFile = new Byte[ciphertext.Length];
 
             _key = _key.Trim().ToUpper();
 
@@ -29,10 +29,10 @@ namespace CryptoSpade
             {
                 keyIndex = keyIndex % keylength;
                 int shift = _key[keyIndex] - 65;
-                result[i] = (byte)((ciphertext[i] + 256 - shift) % 256);
+                decryptFile[i] = (byte)((ciphertext[i] + 256 - shift) % 256);
                 keyIndex++;
             }
-            return result;
+            return decryptFile;
         }
 
         public string Encrypt(string plainText)
